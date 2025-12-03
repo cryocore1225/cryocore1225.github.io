@@ -19,21 +19,21 @@
   <meta name="author" content="Cryocore1225">
   <meta name="keywords" content="">
   
-    <meta name="description" content="do while循环在Java中，while循环是先判断循环条件，再执行循环。而另一种do while循环则是先执行循环，再判断条件，条件满足时继续循环，条件不满足时退出。它的用法是： 123do &#123;    执行循环语句&#125; while (条件表达式);  可见，do while循环会至少循环一次。 我们把对1到100的求和用do while循环改写一下： 12345678910">
+    <meta name="description" content="Java 基础到面向对象线性总结 1. 内存与存储Java 程序在运行时主要使用两块内存：  栈（Stack）： 存储基本类型变量（int、double、boolean 等）和引用变量的地址 生命周期随方法调用结束而结束   堆（Heap）： 存储对象实例（Object、数组等） 由垃圾回收器自动管理（Garbage Collector）     基本类型直接存值，引用类型存地址。   2. 数据">
 <meta property="og:type" content="article">
-<meta property="og:title" content="do while循环">
-<meta property="og:url" content="https://cryocore1225.github.io/2025/12/03/do%20while%E5%BE%AA%E7%8E%AF/index.html">
+<meta property="og:title" content="Java面向对象">
+<meta property="og:url" content="https://cryocore1225.github.io/2025/12/03/Java%E5%9F%BA%E7%A1%80%E5%88%B0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BA%BF%E6%80%A7%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Port 25565">
-<meta property="og:description" content="do while循环在Java中，while循环是先判断循环条件，再执行循环。而另一种do while循环则是先执行循环，再判断条件，条件满足时继续循环，条件不满足时退出。它的用法是： 123do &#123;    执行循环语句&#125; while (条件表达式);  可见，do while循环会至少循环一次。 我们把对1到100的求和用do while循环改写一下： 12345678910">
+<meta property="og:description" content="Java 基础到面向对象线性总结 1. 内存与存储Java 程序在运行时主要使用两块内存：  栈（Stack）： 存储基本类型变量（int、double、boolean 等）和引用变量的地址 生命周期随方法调用结束而结束   堆（Heap）： 存储对象实例（Object、数组等） 由垃圾回收器自动管理（Garbage Collector）     基本类型直接存值，引用类型存地址。   2. 数据">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-12-02T15:57:52.000Z">
-<meta property="article:modified_time" content="2025-12-02T14:58:20.257Z">
+<meta property="article:published_time" content="2025-12-03T11:05:01.000Z">
+<meta property="article:modified_time" content="2025-12-03T10:05:28.976Z">
 <meta property="article:author" content="Cryocore1225">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>do while循环 - Port 25565</title>
+  <title>Java面向对象 - Port 25565</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="do while循环"></span>
+            <span id="subtitle" data-typed-text="Java面向对象"></span>
           
         </div>
 
@@ -210,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-12-02 23:57" pubdate>
-          2025年12月2日 晚上
+        <time datetime="2025-12-03 19:05" pubdate>
+          2025年12月3日 晚上
         </time>
       </span>
     
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          262 字
+          631 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          3 分钟
+          6 分钟
         
       </span>
     
@@ -270,24 +270,137 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">do while循环</h1>
+            <h1 id="seo-header">Java面向对象</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do while循环"></a>do while循环</h3><p>在Java中，<code>while</code>循环是先判断循环条件，再执行循环。而另一种<code>do while</code>循环则是先执行循环，再判断条件，条件满足时继续循环，条件不满足时退出。它的用法是：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">do</span> &#123;<br>    执行循环语句<br>&#125; <span class="hljs-keyword">while</span> (条件表达式);<br></code></pre></td></tr></table></figure>
+                <h1 id="Java-基础到面向对象线性总结"><a href="#Java-基础到面向对象线性总结" class="headerlink" title="Java 基础到面向对象线性总结"></a>Java 基础到面向对象线性总结</h1><hr>
+<h2 id="1-内存与存储"><a href="#1-内存与存储" class="headerlink" title="1. 内存与存储"></a>1. 内存与存储</h2><p>Java 程序在运行时主要使用两块内存：</p>
+<ul>
+<li><strong>栈（Stack）</strong>：<ul>
+<li>存储基本类型变量（int、double、boolean 等）和引用变量的地址</li>
+<li>生命周期随方法调用结束而结束</li>
+</ul>
+</li>
+<li><strong>堆（Heap）</strong>：<ul>
+<li>存储对象实例（Object、数组等）</li>
+<li>由垃圾回收器自动管理（Garbage Collector）</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>基本类型直接存值，引用类型存地址。</p>
+</blockquote>
+<hr>
+<h2 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2. 数据类型"></a>2. 数据类型</h2><h3 id="基本类型（值类型）"><a href="#基本类型（值类型）" class="headerlink" title="基本类型（值类型）"></a>基本类型（值类型）</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>8 位整数</td>
+</tr>
+<tr>
+<td>short</td>
+<td>16 位整数</td>
+</tr>
+<tr>
+<td>int</td>
+<td>32 位整数</td>
+</tr>
+<tr>
+<td>long</td>
+<td>64 位整数</td>
+</tr>
+<tr>
+<td>float</td>
+<td>32 位浮点数</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64 位浮点数</td>
+</tr>
+<tr>
+<td>char</td>
+<td>单个字符</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>true &#x2F; false</td>
+</tr>
+</tbody></table>
+<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><ul>
+<li>类（Class）</li>
+<li>接口（Interface）</li>
+<li>数组（Array）</li>
+<li>枚举（Enum）</li>
+</ul>
+<blockquote>
+<p>引用类型变量存储对象在堆中的地址。</p>
+</blockquote>
+<hr>
+<h2 id="3-变量与作用域"><a href="#3-变量与作用域" class="headerlink" title="3. 变量与作用域"></a>3. 变量与作用域</h2><ul>
+<li><strong>局部变量</strong>：在方法内部声明，栈中存储，方法结束销毁</li>
+<li><strong>成员变量（属性）</strong>：在类中声明，但方法外<ul>
+<li>实例变量：属于对象，存堆中</li>
+<li>静态变量（static）：属于类，存方法区</li>
+</ul>
+</li>
+</ul>
+<h3 id="变量修饰符"><a href="#变量修饰符" class="headerlink" title="变量修饰符"></a>变量修饰符</h3><ul>
+<li><code>final</code>：变量不可修改（基本类型值不可变，引用类型引用不可变）</li>
+<li><code>static</code>：属于类，不属于对象</li>
+</ul>
+<hr>
+<h2 id="4-类与对象"><a href="#4-类与对象" class="headerlink" title="4. 类与对象"></a>4. 类与对象</h2><h3 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> &#123;<br>    <span class="hljs-comment">// 属性（成员变量）</span><br>    String name;<br>    <span class="hljs-type">int</span> age;<br><br>    <span class="hljs-comment">// 构造方法</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Person</span><span class="hljs-params">(String name, <span class="hljs-type">int</span> age)</span> &#123;<br>        <span class="hljs-built_in">this</span>.name = name;<br>        <span class="hljs-built_in">this</span>.age = age;<br>    &#125;<br><br>    <span class="hljs-comment">// 方法</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sayHello</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;Hello, I&#x27;m &quot;</span> + name);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>可见，<code>do while</code>循环会至少循环一次。</p>
-<p>我们把对1到100的求和用<code>do while</code>循环改写一下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//while 循环</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">while1</span> &#123;<br>    <span class="hljs-comment">//从1累加到100</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span>(n&lt;=<span class="hljs-number">100</span>)&#123; <span class="hljs-comment">// 循环条件是n小于等于100</span><br>            sum =  sum+n;  <span class="hljs-comment">// 把n累加到sum中</span><br>            n++;  <span class="hljs-comment">//n自身加1</span><br>        &#125;<br>    &#125;<br><span class="hljs-comment">//do while循环</span><br>    <span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; <br>    <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span><span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">do</span>&#123;<br>        sum = sum+n;<br>        n ++;<br>    &#125; <span class="hljs-keyword">while</span>(n&lt;=<span class="hljs-number">100</span>);<br>    System.out.println(sum);<br></code></pre></td></tr></table></figure>
+<h3 id="类的作用"><a href="#类的作用" class="headerlink" title="类的作用"></a>类的作用</h3><ul>
+<li>模板：定义对象的属性和行为</li>
+<li>封装：隐藏实现细节，只暴露必要接口</li>
+<li>面向对象编程基础</li>
+</ul>
+<hr>
+<h2 id="5-对象实例化"><a href="#5-对象实例化" class="headerlink" title="5. 对象实例化"></a>5. 对象实例化</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">Person</span> <span class="hljs-variable">p</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&quot;Alice&quot;</span>, <span class="hljs-number">20</span>);<br></code></pre></td></tr></table></figure>
 
-<p>使用<code>do while</code>循环时，同样要注意循环条件的判断。</p>
-<h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><p>使用<code>do while</code>循环计算从<code>m</code>到<code>n</code>的和。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// do while</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>		<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">m</span> <span class="hljs-operator">=</span> <span class="hljs-number">20</span>;<br>		<span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> <span class="hljs-number">100</span>;<br>		<span class="hljs-comment">// 使用do while计算M+...+N:</span><br>		<span class="hljs-keyword">do</span> &#123;<br>            sum = sum+m;<br>            m++;<br>		&#125; <span class="hljs-keyword">while</span> (m&lt;=n);<br>		System.out.println(sum);<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<ul>
+<li><code>new</code> 关键字：<ol>
+<li>在堆中分配内存</li>
+<li>调用构造方法初始化对象</li>
+<li>返回对象引用存入栈变量 <code>p</code></li>
+</ol>
+</li>
+<li>访问属性和方法：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">System.out.println(p.name); <span class="hljs-comment">// Alice</span><br>p.sayHello();               <span class="hljs-comment">// Hello, I&#x27;m Alice</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p><code>do while</code>先执行循环，再判断条件；</p>
-<p><code>do while</code>循环会至少执行一次。</p>
+<hr>
+<h2 id="6-面向对象核心概念"><a href="#6-面向对象核心概念" class="headerlink" title="6. 面向对象核心概念"></a>6. 面向对象核心概念</h2><h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><ul>
+<li>使用 <code>private</code> 修饰属性，提供 <code>getter</code>&#x2F;<code>setter</code> 方法访问</li>
+</ul>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">private</span> <span class="hljs-title class_">String</span> name;<br><span class="hljs-keyword">public</span> <span class="hljs-title class_">String</span> <span class="hljs-title function_">getName</span>(<span class="hljs-params"></span>) &#123; <span class="hljs-keyword">return</span> name; &#125;<br><span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">setName</span>(<span class="hljs-params"><span class="hljs-title class_">String</span> name</span>) &#123; <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name; &#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><ul>
+<li>子类继承父类的属性和方法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Student</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Person</span> &#123;<br>    <span class="hljs-type">int</span> grade;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Student</span><span class="hljs-params">(String name, <span class="hljs-type">int</span> age, <span class="hljs-type">int</span> grade)</span> &#123;<br>        <span class="hljs-built_in">super</span>(name, age); <span class="hljs-comment">// 调用父类构造方法</span><br>        <span class="hljs-built_in">this</span>.grade = grade;<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">study</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(name + <span class="hljs-string">&quot; is studying in grade &quot;</span> + grade);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><ul>
+<li>父类引用指向子类对象，调用方法时动态绑定：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">Person</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-number">15</span>, <span class="hljs-number">10</span>);<br>s.sayHello(); <span class="hljs-comment">// 调用 Student 继承或重写的方法</span><br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="7-总结线性逻辑"><a href="#7-总结线性逻辑" class="headerlink" title="7. 总结线性逻辑"></a>7. 总结线性逻辑</h2><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livescript">内存 -&gt; 数据类型 -&gt; 变量 -&gt; 类 -&gt; 构造方法 -&gt; 对象 -&gt; 方法调用 -&gt; 封装<span class="hljs-regexp">/继承/</span>多态<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>先理解内存和变量类型</li>
+<li>然后学会类和对象</li>
+<li>最后掌握封装、继承、多态</li>
+</ul>
 
                 
               </div>
@@ -326,8 +439,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>do while循环</div>
-      <div>https://cryocore1225.github.io/2025/12/03/do while循环/</div>
+      <div>Java面向对象</div>
+      <div>https://cryocore1225.github.io/2025/12/03/Java基础到面向对象线性总结/</div>
     </div>
     <div class="license-meta">
       
@@ -339,7 +452,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年12月2日</div>
+          <div>2025年12月3日</div>
         </div>
       
       
@@ -371,18 +484,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/12/03/Java%E5%9F%BA%E7%A1%80%E5%88%B0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BA%BF%E6%80%A7%E6%80%BB%E7%BB%93/" title="Java面向对象">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Java面向对象</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/12/03/2025.12.2/" title="2025.12.2唠叨">
-                        <span class="hidden-mobile">2025.12.2唠叨</span>
+                      <a href="/2025/12/03/do%20while%E5%BE%AA%E7%8E%AF/" title="do while循环">
+                        <span class="hidden-mobile">do while循环</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
