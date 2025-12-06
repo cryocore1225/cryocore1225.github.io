@@ -19,12 +19,12 @@
   <meta name="author" content="Cryocore1225">
   <meta name="keywords" content="">
   
-    <meta name="description" content="浮点数运算1. 浮点数四则运算Java 的浮点数（float、double）可以进行加、减、乘、除运算，但 不能进行位运算或移位运算。 ⚠ 浮点数无法保证精确表示。 例如，0.1 在二进制中是无限循环小数，因此浮点数中只能保存一个近似值；但 0.5 可以被精确表示。 示例： 12345678910&#x2F;&#x2F; 浮点数运算误差public class Main &#123;    public static">
+    <meta name="description" content="浮点数运算 1. 浮点数四则运算 Java 的浮点数（float、double）可以进行加、减、乘、除运算，但 不能进行位运算或移位运算。 ⚠ 浮点数无法保证精确表示。 例如，0.1 在二进制中是无限循环小数，因此浮点数中只能保存一个近似值；但 0.5 可以被精确表示。 示例： 12345678910&#x2F;&#x2F; 浮点数运算误差public class Main &#123;    public stat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浮点数运算">
 <meta property="og:url" content="https://cryocore1225.github.io/java/j1/f4bcb891.html">
 <meta property="og:site_name" content="Port 25565">
-<meta property="og:description" content="浮点数运算1. 浮点数四则运算Java 的浮点数（float、double）可以进行加、减、乘、除运算，但 不能进行位运算或移位运算。 ⚠ 浮点数无法保证精确表示。 例如，0.1 在二进制中是无限循环小数，因此浮点数中只能保存一个近似值；但 0.5 可以被精确表示。 示例： 12345678910&#x2F;&#x2F; 浮点数运算误差public class Main &#123;    public static">
+<meta property="og:description" content="浮点数运算 1. 浮点数四则运算 Java 的浮点数（float、double）可以进行加、减、乘、除运算，但 不能进行位运算或移位运算。 ⚠ 浮点数无法保证精确表示。 例如，0.1 在二进制中是无限循环小数，因此浮点数中只能保存一个近似值；但 0.5 可以被精确表示。 示例： 12345678910&#x2F;&#x2F; 浮点数运算误差public class Main &#123;    public stat">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-12-06T15:14:54.000Z">
 <meta property="article:modified_time" content="2025-12-06T22:11:12.638Z">
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          870 字
+          869 字
         
       </span>
     
@@ -275,27 +275,27 @@
             
               <div class="markdown-body">
                 
-                <h1 id="浮点数运算"><a href="#浮点数运算" class="headerlink" title="浮点数运算"></a>浮点数运算</h1><h2 id="1-浮点数四则运算"><a href="#1-浮点数四则运算" class="headerlink" title="1. 浮点数四则运算"></a><strong>1. 浮点数四则运算</strong></h2><p>Java 的浮点数（<code>float</code>、<code>double</code>）可以进行加、减、乘、除运算，但 <strong>不能进行位运算或移位运算</strong>。</p>
-<p>⚠ <strong>浮点数无法保证精确表示。</strong><br> 例如，0.1 在二进制中是无限循环小数，因此浮点数中只能保存一个近似值；但 0.5 可以被精确表示。</p>
+                <h1>浮点数运算</h1>
+<h2 id="1-浮点数四则运算"><strong>1. 浮点数四则运算</strong></h2>
+<p>Java 的浮点数（<code>float</code>、<code>double</code>）可以进行加、减、乘、除运算，但 <strong>不能进行位运算或移位运算</strong>。</p>
+<p>⚠ <strong>浮点数无法保证精确表示。</strong><br>
+例如，0.1 在二进制中是无限循环小数，因此浮点数中只能保存一个近似值；但 0.5 可以被精确表示。</p>
 <p>示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 浮点数运算误差</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">double</span> <span class="hljs-variable">x</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.0</span> / <span class="hljs-number">10</span>;<br>        <span class="hljs-type">double</span> <span class="hljs-variable">y</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span> - <span class="hljs-number">9.0</span> / <span class="hljs-number">10</span>;<br>        <span class="hljs-comment">// 观察x和y是否相等:</span><br>        System.out.println(x);<br>        System.out.println(y);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
 <p>由于浮点数存在运算误差，所以比较两个浮点数是否相等常常会出现错误的结果。正确的比较方法是判断两个浮点数之差的绝对值是否小于一个很小的数：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 比较x和y是否相等，先计算其差的绝对值:</span><br><span class="hljs-type">double</span> <span class="hljs-variable">r</span> <span class="hljs-operator">=</span> Math.abs(x - y);<br><span class="hljs-comment">// 再判断绝对值是否足够小:</span><br><span class="hljs-keyword">if</span> (r &lt; <span class="hljs-number">0.00001</span>) &#123;<br>    <span class="hljs-comment">// 可以认为相等</span><br>&#125; <span class="hljs-keyword">else</span> &#123;<br>    <span class="hljs-comment">// 不相等</span><br>&#125;<br></code></pre></td></tr></table></figure>
-
 <hr>
-<h2 id="2-类型提升（Type-Promotion）"><a href="#2-类型提升（Type-Promotion）" class="headerlink" title="2. 类型提升（Type Promotion）"></a><strong>2. 类型提升（Type Promotion）</strong></h2><p>当浮点数与整数共同参与运算时，整数会自动提升为浮点数：</p>
+<h2 id="2-类型提升（Type-Promotion）"><strong>2. 类型提升（Type Promotion）</strong></h2>
+<p>当浮点数与整数共同参与运算时，整数会自动提升为浮点数：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 类型提升</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span>;<br>        <span class="hljs-type">double</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.2</span> + <span class="hljs-number">24.0</span> / n; <span class="hljs-comment">// 6.0</span><br>        System.out.println(d);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
 <p>⚠ <strong>需要特别注意，在一个复杂的四则运算中，两个整数的运算不会出现自动提升的情况。例如：</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">double</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.2</span> + <span class="hljs-number">24</span> / <span class="hljs-number">5</span>; <span class="hljs-comment">// 结果不是 6.0 而是 5.2</span><br></code></pre></td></tr></table></figure>
-
 <p>计算结果为<code>5.2</code>，原因是编译器计算<code>24 / 5</code>这个子表达式时，按两个整数进行运算，结果仍为整数<code>4</code>。</p>
 <p>要修复这个计算结果，可以将<code>24 / 5</code>改为<code>24.0 / 5</code>。由于<code>24.0</code>是浮点数，因此，计算除法时自动将<code>5</code>提升为浮点数：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">double</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.2</span> + <span class="hljs-number">24.0</span> / <span class="hljs-number">5</span>; <span class="hljs-comment">// 6.0</span><br></code></pre></td></tr></table></figure>
-
 <hr>
-<h2 id="3-浮点数的特殊值（溢出表现）"><a href="#3-浮点数的特殊值（溢出表现）" class="headerlink" title="3. 浮点数的特殊值（溢出表现）"></a><strong>3. 浮点数的特殊值（溢出表现）</strong></h2><p>整数运算在除数为<code>0</code>时会报错，而浮点数运算在除数为<code>0</code>时，不会报错，但会返回几个特殊值：</p>
+<h2 id="3-浮点数的特殊值（溢出表现）"><strong>3. 浮点数的特殊值（溢出表现）</strong></h2>
+<p>整数运算在除数为<code>0</code>时会报错，而浮点数运算在除数为<code>0</code>时，不会报错，但会返回几个特殊值：</p>
 <ul>
 <li><code>NaN</code>表示Not a Number</li>
 <li><code>Infinity</code>表示无穷大</li>
@@ -308,7 +308,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>NaN</code></td>
 <td>Not a Number</td>
 </tr>
@@ -320,26 +321,30 @@
 <td><code>-Infinity</code></td>
 <td>负无穷大</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">double</span> <span class="hljs-variable">d1</span> <span class="hljs-operator">=</span> <span class="hljs-number">0.0</span> / <span class="hljs-number">0</span>;  <span class="hljs-comment">// NaN</span><br><span class="hljs-type">double</span> <span class="hljs-variable">d2</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.0</span> / <span class="hljs-number">0</span>;  <span class="hljs-comment">// Infinity</span><br><span class="hljs-type">double</span> <span class="hljs-variable">d3</span> <span class="hljs-operator">=</span> -<span class="hljs-number">1.0</span> / <span class="hljs-number">0</span>; <span class="hljs-comment">// -Infinity</span><br></code></pre></td></tr></table></figure>
-
 <p>这三种特殊值在实际运算中很少碰到，只需要了解即可。</p>
 <hr>
-<h2 id="4-强制转型（Cast）"><a href="#4-强制转型（Cast）" class="headerlink" title="4. 强制转型（Cast）"></a><strong>4. 强制转型（Cast）</strong></h2><p>浮点数 → 整数时会直接舍弃小数部分：</p>
+<h2 id="4-强制转型（Cast）"><strong>4. 强制转型（Cast）</strong></h2>
+<p>浮点数 → 整数时会直接舍弃小数部分：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">int</span> <span class="hljs-variable">n1</span> <span class="hljs-operator">=</span> (<span class="hljs-type">int</span>) <span class="hljs-number">12.3</span>;   <span class="hljs-comment">// 12</span><br><span class="hljs-type">int</span> <span class="hljs-variable">n2</span> <span class="hljs-operator">=</span> (<span class="hljs-type">int</span>) <span class="hljs-number">12.7</span>;   <span class="hljs-comment">// 12</span><br><span class="hljs-type">int</span> <span class="hljs-variable">n3</span> <span class="hljs-operator">=</span> (<span class="hljs-type">int</span>) -<span class="hljs-number">12.7</span>;  <span class="hljs-comment">// -12</span><br></code></pre></td></tr></table></figure>
-
 <p>超过整数范围时返回最大（或最小）整数：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> (<span class="hljs-type">int</span>) <span class="hljs-number">1.2e20</span>; <span class="hljs-comment">// 2147483647</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="四舍五入：浮点数-0-5-后取整"><a href="#四舍五入：浮点数-0-5-后取整" class="headerlink" title="四舍五入：浮点数 + 0.5 后取整"></a><strong>四舍五入：浮点数 + 0.5 后取整</strong></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">double</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> <span class="hljs-number">2.6</span>;<br><span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> (<span class="hljs-type">int</span>) (d + <span class="hljs-number">0.5</span>); <span class="hljs-comment">// 3</span><br></code></pre></td></tr></table></figure>
-
+<h3 id="四舍五入：浮点数-0-5-后取整"><strong>四舍五入：浮点数 + 0.5 后取整</strong></h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">double</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> <span class="hljs-number">2.6</span>;<br><span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> (<span class="hljs-type">int</span>) (d + <span class="hljs-number">0.5</span>); <span class="hljs-comment">// 3</span><br></code></pre></td></tr></table></figure>
 <hr>
-<h2 id="5-练习：求一元二次方程的根"><a href="#5-练习：求一元二次方程的根" class="headerlink" title="5. 练习：求一元二次方程的根"></a><strong>5. 练习：求一元二次方程的根</strong></h2><p>公式：<br>$$<br>x &#x3D; \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}<br>$$<br>示例代码：</p>
+<h2 id="5-练习：求一元二次方程的根"><strong>5. 练习：求一元二次方程的根</strong></h2>
+<p>公式：<br>
+$$<br>
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}<br>
+$$<br>
+示例代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 一元二次方程</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">double</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.0</span>;<br>        <span class="hljs-type">double</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> <span class="hljs-number">3.0</span>;<br>        <span class="hljs-type">double</span> <span class="hljs-variable">c</span> <span class="hljs-operator">=</span> -<span class="hljs-number">4.0</span>;<br>        <span class="hljs-comment">// 求平方根可用 Math.sqrt():</span><br>        <span class="hljs-comment">// System.out.println(Math.sqrt(2)); ==&gt; 1.414</span><br>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span></span><br>        <span class="hljs-type">double</span> <span class="hljs-variable">r1</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-type">double</span> <span class="hljs-variable">r2</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        System.out.println(r1);<br>        System.out.println(r2);<br>        System.out.println(r1 == <span class="hljs-number">1</span> &amp;&amp; r2 == -<span class="hljs-number">4</span> ? <span class="hljs-string">&quot;测试通过&quot;</span> : <span class="hljs-string">&quot;测试失败&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
 <hr>
-<h2 id="6-小结"><a href="#6-小结" class="headerlink" title="6. 小结"></a><strong>6. 小结</strong></h2><ul>
+<h2 id="6-小结"><strong>6. 小结</strong></h2>
+<ul>
 <li>浮点数 <strong>不能精确表示多数小数</strong>（如 0.1），会产生误差。</li>
 <li>浮点数比较需判断差值是否小于某个阈值。</li>
 <li>整数和浮点数一起运算时，整数会自动提升为浮点数。</li>

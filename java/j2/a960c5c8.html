@@ -19,15 +19,15 @@
   <meta name="author" content="Cryocore1225">
   <meta name="keywords" content="">
   
-    <meta name="description" content="类、对象、属性与方法第一部分：类与对象的基本概念1.1 类的定义类（Class）是面向对象编程的核心概念，可以理解为对象的模板或蓝图。 它定义了对象有哪些属性（特征）和方法（行为）。 示例代码： 12345678910public class Person &#123;    &#x2F;&#x2F; 属性（成员变量）    String name;    int age;        &#x2F;&#x2F; 方法（成员方法）">
+    <meta name="description" content="类、对象、属性与方法 第一部分：类与对象的基本概念 1.1 类的定义 类（Class）是面向对象编程的核心概念，可以理解为对象的模板或蓝图。 它定义了对象有哪些属性（特征）和方法（行为）。 示例代码： 12345678910public class Person &#123;    &#x2F;&#x2F; 属性（成员变量）    String name;    int age;        &#x2F;&#x2F; 方法（成员方法）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="类、对象、属性与方法">
 <meta property="og:url" content="https://cryocore1225.github.io/java/j2/a960c5c8.html">
 <meta property="og:site_name" content="Port 25565">
-<meta property="og:description" content="类、对象、属性与方法第一部分：类与对象的基本概念1.1 类的定义类（Class）是面向对象编程的核心概念，可以理解为对象的模板或蓝图。 它定义了对象有哪些属性（特征）和方法（行为）。 示例代码： 12345678910public class Person &#123;    &#x2F;&#x2F; 属性（成员变量）    String name;    int age;        &#x2F;&#x2F; 方法（成员方法）">
+<meta property="og:description" content="类、对象、属性与方法 第一部分：类与对象的基本概念 1.1 类的定义 类（Class）是面向对象编程的核心概念，可以理解为对象的模板或蓝图。 它定义了对象有哪些属性（特征）和方法（行为）。 示例代码： 12345678910public class Person &#123;    &#x2F;&#x2F; 属性（成员变量）    String name;    int age;        &#x2F;&#x2F; 方法（成员方法）">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-12-03T17:31:34.000Z">
-<meta property="article:modified_time" content="2025-12-06T19:09:01.143Z">
+<meta property="article:modified_time" content="2025-12-06T22:53:07.511Z">
 <meta property="article:author" content="Cryocore1225">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -275,10 +275,13 @@
             
               <div class="markdown-body">
                 
-                <h1 id="类、对象、属性与方法"><a href="#类、对象、属性与方法" class="headerlink" title="类、对象、属性与方法"></a>类、对象、属性与方法</h1><h2 id="第一部分：类与对象的基本概念"><a href="#第一部分：类与对象的基本概念" class="headerlink" title="第一部分：类与对象的基本概念"></a><strong>第一部分：类与对象的基本概念</strong></h2><h3 id="1-1-类的定义"><a href="#1-1-类的定义" class="headerlink" title="1.1 类的定义"></a>1.1 类的定义</h3><p><strong>类（Class）是面向对象编程的核心概念，可以理解为对象的模板或蓝图</strong>。<br> 它定义了对象有哪些属性（特征）和方法（行为）。</p>
+                <h1>类、对象、属性与方法</h1>
+<h2 id="第一部分：类与对象的基本概念"><strong>第一部分：类与对象的基本概念</strong></h2>
+<h3 id="1-1-类的定义">1.1 类的定义</h3>
+<p><strong>类（Class）是面向对象编程的核心概念，可以理解为对象的模板或蓝图</strong>。<br>
+它定义了对象有哪些属性（特征）和方法（行为）。</p>
 <p><strong>示例代码：</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> &#123;<br>    <span class="hljs-comment">// 属性（成员变量）</span><br>    String name;<br>    <span class="hljs-type">int</span> age;<br>    <br>    <span class="hljs-comment">// 方法（成员方法）</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">dress</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;人会穿衣服&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
 <p><strong>笔记要点：</strong></p>
 <ol>
 <li>类是抽象的概念，不能直接执行，必须实例化为对象才能使用。</li>
@@ -287,10 +290,12 @@
 <li>方法必须写在类中，不能单独存在。</li>
 <li>类可以包含多个属性和方法，属性和方法的组合定义了对象的完整特征。</li>
 </ol>
-<h3 id="1-2-对象的创建与使用"><a href="#1-2-对象的创建与使用" class="headerlink" title="1.2 对象的创建与使用"></a>1.2 对象的创建与使用</h3><p>**对象(Object)**是类的具体实例，是可以操作的实体。<br> 使用 <code>new</code> 关键字创建对象。</p>
+<h3 id="1-2-对象的创建与使用">1.2 对象的创建与使用</h3>
+<p>**对象（Object）**是类的具体示例，是可以操作的实体</p>
+<p>使用<code>new</code>关键词来创建对象</p>
+<p><strong>加粗测试</strong></p>
 <p><strong>示例代码：</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Exam01Test</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-comment">// 创建对象</span><br>        <span class="hljs-type">Exam01</span> <span class="hljs-variable">p1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Exam01</span>();<br>        <br>        <span class="hljs-comment">// 设置属性值</span><br>        p1.name = <span class="hljs-string">&quot;张三&quot;</span>;<br>        p1.age = <span class="hljs-number">18</span>;<br>        p1.gender = <span class="hljs-string">&quot;男&quot;</span>;<br>        <br>        <span class="hljs-comment">// 调用方法</span><br>        p1.study();<br>        System.out.println(<span class="hljs-string">&quot;年龄：&quot;</span> + p1.showAge());<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
 <p><strong>笔记要点：</strong></p>
 <ul>
 <li>使用 <code>类名 对象名 = new 类名();</code> 创建对象</li>
@@ -302,20 +307,21 @@
 <li>同一个类可以创建多个对象，每个对象的属性值可以不同</li>
 <li>对象之间互不干扰，除非使用 <code>static</code> 修饰属性或方法</li>
 </ul>
-<h2 id="第二部分：方法的详细讲解"><a href="#第二部分：方法的详细讲解" class="headerlink" title="第二部分：方法的详细讲解"></a><strong>第二部分：方法的详细讲解</strong></h2><h3 id="2-1-无返回值方法"><a href="#2-1-无返回值方法" class="headerlink" title="2.1 无返回值方法"></a>2.1 无返回值方法</h3><p><strong>无返回值方法</strong>使用 <code>void</code> 关键字，不返回任何数据。</p>
+<h2 id="第二部分：方法的详细讲解"><strong>第二部分：方法的详细讲解</strong></h2>
+<h3 id="2-1-无返回值方法">2.1 无返回值方法</h3>
+<p><strong>无返回值方法</strong>使用 <code>void</code> 关键字，不返回任何数据。</p>
 <p><strong>示例代码：</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 无参数无返回值</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">dress</span><span class="hljs-params">()</span> &#123;<br>    System.out.println(<span class="hljs-string">&quot;人会穿衣服&quot;</span>);<br>&#125;<br><br><span class="hljs-comment">// 有参数无返回值</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">eat</span><span class="hljs-params">(String food)</span> &#123;<br>    System.out.println(<span class="hljs-string">&quot;人会吃&quot;</span> + food);<br>&#125;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sleep</span><span class="hljs-params">(<span class="hljs-type">int</span> hours)</span> &#123;<br>    System.out.println(<span class="hljs-string">&quot;人需要睡&quot;</span> + hours + <span class="hljs-string">&quot;个小时&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
-
 <p><strong>要点：</strong></p>
 <ul>
 <li>无返回值方法主要用于执行操作或打印信息</li>
 <li>可以有参数或无参数</li>
 <li>调用方法时直接使用 <code>对象名.方法名(参数)</code></li>
 </ul>
-<h3 id="2-2-有返回值方法"><a href="#2-2-有返回值方法" class="headerlink" title="2.2 有返回值方法"></a>2.2 有返回值方法</h3><p><strong>有返回值方法</strong>需要指定返回类型，并使用 <code>return</code> 返回数据。</p>
+<h3 id="2-2-有返回值方法">2.2 有返回值方法</h3>
+<p><strong>有返回值方法</strong>需要指定返回类型，并使用 <code>return</code> 返回数据。</p>
 <p><strong>示例代码：</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 无参数有返回值</span><br><span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">showAge</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-keyword">return</span> age;<br>&#125;<br><br><span class="hljs-comment">// 有参数有返回值</span><br><span class="hljs-keyword">public</span> String <span class="hljs-title function_">go</span><span class="hljs-params">(String way)</span> &#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;今天出行方式是&quot;</span> + way;<br>&#125;<br></code></pre></td></tr></table></figure>
-
 <p><strong>要点：</strong></p>
 <ul>
 <li>返回值类型可以是基本类型或对象类型</li>
@@ -326,14 +332,15 @@
 <li>如果方法声明返回类型为 <code>int</code>，必须确保方法体中有 <code>return int值</code></li>
 <li><code>void</code> 方法不能使用 <code>return 值</code>，但可以单独使用 <code>return;</code> 提前结束方法</li>
 </ul>
-<h3 id="2-3-方法调用注意事项"><a href="#2-3-方法调用注意事项" class="headerlink" title="2.3 方法调用注意事项"></a>2.3 方法调用注意事项</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 错误示例</span><br>p1.showAge(); <span class="hljs-comment">// 返回值被忽略</span><br><br><span class="hljs-comment">// 正确示例</span><br><span class="hljs-type">int</span> <span class="hljs-variable">age1</span> <span class="hljs-operator">=</span> p1.showAge(); <span class="hljs-comment">// 保存返回值</span><br>System.out.println(age1);<br></code></pre></td></tr></table></figure>
-
+<h3 id="2-3-方法调用注意事项">2.3 方法调用注意事项</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// 错误示例</span><br>p1.showAge(); <span class="hljs-comment">// 返回值被忽略</span><br><br><span class="hljs-comment">// 正确示例</span><br><span class="hljs-type">int</span> <span class="hljs-variable">age1</span> <span class="hljs-operator">=</span> p1.showAge(); <span class="hljs-comment">// 保存返回值</span><br>System.out.println(age1);<br></code></pre></td></tr></table></figure>
 <p><strong>要点：</strong></p>
 <ul>
 <li>有返回值方法调用时，<strong>返回值必须被使用</strong></li>
 <li>无返回值方法调用可以直接调用，不需要接收</li>
 </ul>
-<h3 id="2-4-小练习"><a href="#2-4-小练习" class="headerlink" title="2.4 小练习"></a>2.4 小练习</h3><p>请定义一个City类，该class具有如下字段:</p>
+<h3 id="2-4-小练习">2.4 小练习</h3>
+<p>请定义一个City类，该class具有如下字段:</p>
 <ul>
 <li>name: 名称，String类型</li>
 <li>latitude: 纬度，double类型</li>
@@ -341,52 +348,60 @@
 </ul>
 <p>实例化几个City并赋值，然后打印。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">// City</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">City</span> <span class="hljs-variable">bj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">City</span>();<br>        bj.name = <span class="hljs-string">&quot;Beijing&quot;</span>;<br>        bj.latitude = <span class="hljs-number">39.903</span>;<br>        bj.longitude = <span class="hljs-number">116.401</span>;<br>        System.out.println(bj.name);<br>        System.out.println(<span class="hljs-string">&quot;location: &quot;</span> + bj.latitude + <span class="hljs-string">&quot;, &quot;</span> + bj.longitude);<br>    &#125;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">City</span> &#123;<br>    ???<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h2 id="第三部分：完整的类示例"><a href="#第三部分：完整的类示例" class="headerlink" title="第三部分：完整的类示例"></a><strong>第三部分：完整的类示例</strong></h2><h3 id="3-1-Exam01类完整代码"><a href="#3-1-Exam01类完整代码" class="headerlink" title="3.1 Exam01类完整代码"></a>3.1 Exam01类完整代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Exam01</span> &#123;<br>    <span class="hljs-comment">// 属性</span><br>    String name;<br>    <span class="hljs-type">int</span> age;<br>    String gender;<br>    <br>    <span class="hljs-comment">// 方法</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">study</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;studying&quot;</span>);<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">showAge</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> age;<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">addAge</span><span class="hljs-params">(<span class="hljs-type">int</span> addAge)</span> &#123;<br>        age += addAge;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h3 id="3-2-方法调用中的常见问题"><a href="#3-2-方法调用中的常见问题" class="headerlink" title="3.2 方法调用中的常见问题"></a>3.2 方法调用中的常见问题</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java">p1.age = <span class="hljs-number">18</span>;<br>p1.addAge(<span class="hljs-number">2</span>);<br>System.out.println(<span class="hljs-string">&quot;age:&quot;</span> + p1.age); <span class="hljs-comment">// 输出：20</span><br><br><span class="hljs-type">int</span> <span class="hljs-variable">age1</span> <span class="hljs-operator">=</span> p1.showAge(); <span class="hljs-comment">// age1 = 18</span><br>p1.addAge(<span class="hljs-number">2</span>);<br>System.out.println(<span class="hljs-string">&quot;age1:&quot;</span> + age1); <span class="hljs-comment">// 输出：18（age1值未变）</span><br></code></pre></td></tr></table></figure>
-
+<h2 id="第三部分：完整的类示例"><strong>第三部分：完整的类示例</strong></h2>
+<h3 id="3-1-Exam01类完整代码">3.1 Exam01类完整代码</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Exam01</span> &#123;<br>    <span class="hljs-comment">// 属性</span><br>    String name;<br>    <span class="hljs-type">int</span> age;<br>    String gender;<br>    <br>    <span class="hljs-comment">// 方法</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">study</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;studying&quot;</span>);<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">showAge</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> age;<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">addAge</span><span class="hljs-params">(<span class="hljs-type">int</span> addAge)</span> &#123;<br>        age += addAge;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="3-2-方法调用中的常见问题">3.2 方法调用中的常见问题</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java">p1.age = <span class="hljs-number">18</span>;<br>p1.addAge(<span class="hljs-number">2</span>);<br>System.out.println(<span class="hljs-string">&quot;age:&quot;</span> + p1.age); <span class="hljs-comment">// 输出：20</span><br><br><span class="hljs-type">int</span> <span class="hljs-variable">age1</span> <span class="hljs-operator">=</span> p1.showAge(); <span class="hljs-comment">// age1 = 18</span><br>p1.addAge(<span class="hljs-number">2</span>);<br>System.out.println(<span class="hljs-string">&quot;age1:&quot;</span> + age1); <span class="hljs-comment">// 输出：18（age1值未变）</span><br></code></pre></td></tr></table></figure>
 <p><strong>分析：</strong></p>
 <ul>
 <li><code>age1</code> 保存的是调用 <code>showAge()</code> 时的 <strong>快照</strong></li>
 <li><code>p1.age</code> 被修改，<code>age1</code> 并不会自动更新</li>
 <li><strong>理解点</strong>：对象的属性是“实时数据”，变量是“独立拷贝”</li>
 </ul>
-<h2 id="第四部分：实践练习"><a href="#第四部分：实践练习" class="headerlink" title="第四部分：实践练习"></a><strong>第四部分：实践练习</strong></h2><h3 id="练习1：创建Person类对象"><a href="#练习1：创建Person类对象" class="headerlink" title="练习1：创建Person类对象"></a>练习1：创建Person类对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>();<br>person.name = <span class="hljs-string">&quot;李四&quot;</span>;<br>person.age = <span class="hljs-number">25</span>;<br>person.dress();<br>person.eat(<span class="hljs-string">&quot;米饭&quot;</span>);<br><span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> person.go(<span class="hljs-string">&quot;步行&quot;</span>);<br>System.out.println(result);<br></code></pre></td></tr></table></figure>
-
+<h2 id="第四部分：实践练习"><strong>第四部分：实践练习</strong></h2>
+<h3 id="练习1：创建Person类对象">练习1：创建Person类对象</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">Person</span> <span class="hljs-variable">person</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>();<br>person.name = <span class="hljs-string">&quot;李四&quot;</span>;<br>person.age = <span class="hljs-number">25</span>;<br>person.dress();<br>person.eat(<span class="hljs-string">&quot;米饭&quot;</span>);<br><span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> person.go(<span class="hljs-string">&quot;步行&quot;</span>);<br>System.out.println(result);<br></code></pre></td></tr></table></figure>
 <p><strong>补充练习思路：</strong></p>
 <ul>
 <li>尝试创建多个对象，设置不同属性</li>
 <li>调用相同方法，观察输出差异</li>
 </ul>
-<h2 id="第五部分：核心知识点总结"><a href="#第五部分：核心知识点总结" class="headerlink" title="第五部分：核心知识点总结"></a><strong>第五部分：核心知识点总结</strong></h2><h3 id="5-1-类与对象关系"><a href="#5-1-类与对象关系" class="headerlink" title="5.1 类与对象关系"></a>5.1 类与对象关系</h3><ul>
+<h2 id="第五部分：核心知识点总结"><strong>第五部分：核心知识点总结</strong></h2>
+<h3 id="5-1-类与对象关系">5.1 类与对象关系</h3>
+<ul>
 <li>类：对象的蓝图或模板</li>
 <li>对象：类的具体实例</li>
 <li>一个类可以创建多个对象，属性和方法是对象的共同特征</li>
 </ul>
 <hr>
-<h3 id="5-2-方法要点"><a href="#5-2-方法要点" class="headerlink" title="5.2 方法要点"></a>5.2 方法要点</h3><ul>
+<h3 id="5-2-方法要点">5.2 方法要点</h3>
+<ul>
 <li>方法必须定义在类中</li>
 <li>无返回值方法使用 <code>void</code></li>
 <li>有返回值方法必须使用 <code>return</code></li>
 <li>调用有返回值方法时应<strong>接收或处理返回值</strong></li>
 </ul>
 <hr>
-<h3 id="5-3-编程规范"><a href="#5-3-编程规范" class="headerlink" title="5.3 编程规范"></a>5.3 编程规范</h3><ul>
+<h3 id="5-3-编程规范">5.3 编程规范</h3>
+<ul>
 <li>类名：大驼峰（<code>Person</code>、<code>Exam01</code>）</li>
 <li>方法名：小驼峰（<code>showAge</code>、<code>addAge</code>）</li>
 <li>属性名：小驼峰（<code>name</code>、<code>age</code>）</li>
 <li>注释清晰，便于维护</li>
 </ul>
 <hr>
-<h3 id="5-4-补充知识点"><a href="#5-4-补充知识点" class="headerlink" title="5.4 补充知识点"></a>5.4 补充知识点</h3><ol>
-<li><strong>面向对象三大特性</strong>（后续学习）<ul>
+<h3 id="5-4-补充知识点">5.4 补充知识点</h3>
+<ol>
+<li><strong>面向对象三大特性</strong>（后续学习）
+<ul>
 <li>封装（Encapsulation）</li>
 <li>继承（Inheritance）</li>
 <li>多态（Polymorphism）</li>
 </ul>
 </li>
-<li><strong>对象引用</strong><ul>
+<li><strong>对象引用</strong>
+<ul>
 <li>对象变量保存的是对象地址，多个变量可引用同一个对象</li>
 <li>修改对象属性会影响所有引用该对象的变量</li>
 </ul>
